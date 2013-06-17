@@ -30,7 +30,7 @@ Command Line Usage
 
 Calling from the command line involves a simple
 
-  php twitter_bearer_key.php {your consumer key} {your consumer secret}
+```php twitter_bearer_key.php {your consumer key} {your consumer secret}```
 
 The Bearer key will then be output.
 
@@ -41,15 +41,15 @@ Including in an application
 
 The consumer key and secret will only be pulled from $argv if they are not already set, so before including the code we simply need to set their values. The other thing we probably want to do is to prevent the bearer key from being echoed, so the following should work
 
-  <?php
-  $no_display_token = true;
-  $consumer_key = {your consumer key};
-  $consumer_secret = {your consumer secret}
-  require('twitter_bearer_key.php');
+```<?php
+$no_display_token = true;
+$consumer_key = {your consumer key};
+$consumer_secret = {your consumer secret}
+require('twitter_bearer_key.php');
 
   // The bearer key is now in $k->access_token
 
-  ?>
+  ?>```
 
 
 License
