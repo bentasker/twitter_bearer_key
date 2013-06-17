@@ -4,7 +4,7 @@ Twitter Bearer Key Cheat Script
 Introduction
 -------------
 
-On June 11 2013, Twitter [disabled V1 of their API]](https://dev.twitter.com/blog/api-v1-is-retired). The biggest material change between V1 and V1.1 of the API is that authentication is now required for all requests (even read-only ones).
+On June 11 2013, Twitter [disabled V1 of their API](https://dev.twitter.com/blog/api-v1-is-retired). The biggest material change between V1 and V1.1 of the API is that authentication is now required for all requests (even read-only ones).
 
 If you're making read-only requests of public data, it's probably overkill to go through the full process of generating User OAuth tokens. 
 
@@ -18,7 +18,7 @@ Usage
 
 The script has been designed with two use-cases in mind, you can either
 
-- Include within your application, OR
+- Include within your application, **OR**
 - Call directly from the command line
 
 The recommended usage is to call from the shell. If you're including within an app, you'll need to disclose the Consumer Key and Secret (both of which should be considered secret), so unless you've tight control over your source, it presents a possible security risk.
