@@ -2,8 +2,11 @@
 /** Cheat script to retrieve a Bearer key for App only Twitter Authentication
 *
 * You'll need to add your application at https://dev.twitter.com/ and get the Consumer key & Secret
+* See the README for more information
 *
-* @copyright (C) 2013 B Tasker
+* https://github.com/bentasker/twitter_bearer_key
+*
+* @copyright (C) 2013 B Tasker - http://www.bentasker.co.uk
 * @license GNU GPL V2
 * See LICENSE
 *
