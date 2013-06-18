@@ -41,7 +41,7 @@ class twitSetup{
 	"Authorization: Basic {$this->encoded}", "Content-Type: application/x-www-form-urlencoded;charset=UTF-8"
       );
 
-      return $this->placecurlrequest("https://api.twitter.com/oauth2/token");
+      return json_decode($this->placecurlrequest("https://api.twitter.com/oauth2/token"));
     }
 
 
@@ -58,7 +58,14 @@ if (!isset($consumer_key) && !isset($consumer_secret)){
 $t = new twitSetup;
 $k = $t->getBearer($consumer_key,$consumer_secret);
 
-if (!$no_display_token)
-  echo "Your Bearer token is {$k->access_token}\n";
 
+if (!isset($no_display_token)){
+  if (isset($k->access_token)){
+    echo "Your Bearer token is {$k->access_token}\n";
+  }else{
+    echo "Could not retrieve key \n\n";
+    print_r($k);
+    echo "\n\n";
+  }
+}
 ?>
